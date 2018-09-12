@@ -20,7 +20,7 @@ last_updated: # leave blank if you don't want to display last updated
 github_username: talf301 # your GitHub user name
 twitter_username: taltheturtle # your Twitter handle
 linkedin_username: # your LinkedIn user name
-scholar_userid: # your Google Scholar ID
+scholar_userid: tgB8uegAAAAJ # your Google Scholar ID
 orcid_id: # your ORCID ID
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
@@ -90,10 +90,7 @@ scholar:
 
   last_name: Friedman
 
-  style: apa
-  locale: en
-
-  sort_by: year
+  sort_by: year,month
   order: descending
 
   source: /_bibliography/
