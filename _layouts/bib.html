@@ -1,6 +1,5 @@
 ---
 ---
-
 {% if entry.abbr %}
   {% if site.data.venues[entry.abbr] %}
     <abbr>[<a href="{{site.data.venues[entry.abbr].url}}" target="_blank">{{entry.abbr}}</a>]</abbr>
@@ -62,6 +61,12 @@
     {% endif %}
     </span>
   {% endif %}
+	
+  <span class="annotations">
+	  {% if entry.annotation %}
+	  <b> {{entry.annotation}} </b>
+	  {% endif %}
+  </span>
 
   <span class="links">
   {% if entry.abstract %}
@@ -75,6 +80,9 @@
   {% endif %}
   {% if entry.pdf %}
     [<a href="{{ entry.pdf | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>]
+  {% endif %}
+  {% if entry.extpdf %}
+	  [<a href="{{ entry.extpdf }}" target="_blank">PDF</a>]
   {% endif %}
   {% if entry.supp %}
     [<a href="{{ entry.supp | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Supp</a>]
