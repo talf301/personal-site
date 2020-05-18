@@ -64,7 +64,7 @@
 	
   <span class="annotations">
 	    {% if entry.annotation %}
-      <span style="text-decoration: underline;">{{entry.annotation}}</span>.
+      <span style="text-decoration: underline;">{{entry.annotation}}</span>
 	  {% endif %}
   </span>
 
@@ -84,6 +84,10 @@
   {% if entry.extpdf %}
 	  [<a href="{{ entry.extpdf }}" target="_blank">PDF</a>]
   {% endif %}
+  {% if entry.talk %}
+	  [<a href="{{ entry.talk }}" target="_blank">Talk</a>]
+  {% endif %}
+
   {% if entry.supp %}
     [<a href="{{ entry.supp | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Supp</a>]
   {% endif %}
